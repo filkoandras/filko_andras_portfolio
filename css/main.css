@@ -1,0 +1,391 @@
+
+body{
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+
+	
+}
+
+*, *::before, *::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+
+
+  grid-template-areas:
+    "borító borító borító"
+    "menüsáv menüsáv menüsáv"
+    "bal közép jobb"
+    "bal közép jobb"
+    "lábléc lábléc lábléc";
+}
+.grid-containe2{
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+
+
+  grid-template-areas:
+    "borító borító borító"
+    "menüsáv menüsáv menüsáv"
+    "bal közép jobb"
+    "bal közép jobb"
+    "lábléc lábléc lábléc";
+}
+
+
+
+
+.h1 {border: 20px
+		color: #FFFFFF;
+text-shadow: 3px 5px 2px #474747;}
+
+.borító { grid-area: borító; 
+			background-color: #cccccc;
+			background-image: url("ils.jpg");
+			background-size: cover;
+			height: 60vh;
+			background-position: middle;
+			 position: -webkit-sticky; /* Safari */
+  	position: sticky;
+
+			 }
+.menüsáv:hover {background-color: #ffe4cc;}
+
+.men{
+	width: 100%;
+	background-color: rgba(100,77,80,.5);
+	 position: -webkit-sticky; /* Safari */
+  	position: sticky;
+
+
+  	top: 0;
+	
+}
+.men:hover{background-color: rgba(100,77,80,.75);
+			transform-origin: bottom;
+			transition-duration: .9s;}
+.men ul{
+			text-align: center;
+			
+}
+.men ul li {
+			list-style: none;
+			display: inline-block;
+}
+.men ul li a {
+	display:block;
+	text-decoration: none;
+	text-orientation: uppercase;
+	color: #fff;
+	font size: 20px;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 2px;
+	font-weight:600;
+	padding:25px;
+
+}
+.men ul li a:hover { background-color: rgba(100,77,80,.8);
+						transform-origin: middle;
+						border-radius: 8px;
+
+			transition-duration: .9s; 
+		-webkit-box-shadow: 0px 0px 9px 3px #FFCF79; 
+box-shadow: 0px 0px 9px 3px #FFCF79;}
+.men ul li a h1:hover {transform: scale(1.3);}
+
+
+.menüsáv { grid-area: menüsáv;
+		background-color: #d7b39a; 
+		border-bottom: 8px solid black;
+		border-top:  4px solid black;
+		margin: 4px;
+		padding: 10px}
+
+.bal { grid-area: bal; 
+		
+		background-image: url("entbal.jpg");
+			background-size: cover;
+			background-position: right;
+			border-right: 4px solid black;}
+
+.jobb { grid-area: jobb; 
+			
+		background-image: url("entjobb.jpg");
+			background-size: cover;
+			background-position: left;
+			border-left: 4px solid black;}
+
+.közép { grid-area: közép; 
+			background-color: rgba(171, 75, 89, .5);
+	 background-image: url("tegla.jpg");
+background-repeat: repeat;
+min-height: 40%;
+}
+
+.lábléc { grid-area: lábléc;
+		background-color: #d7b39a; 
+		border-bottom: 8px solid black;
+		border-top:  4px solid black;
+		margin: 4px;
+		padding: 10px 10px 10px 20%;
+	}
+
+
+
+
+
+.teszt1 {
+	
+	border: 5px solid black;
+	padding: 16px 1vw;
+	margin: 16px 5vw;
+	border-radius: 20px;
+	background-color: #d7b39a;
+	opacity: .75;
+			
+-webkit-box-shadow: 0px 0px 15px 5px #FFE8C8; 
+box-shadow: 0px 0px 15px 5px #FFE8C8;
+	/*width: 100%;*/
+	/*line-height: 32px;*/
+}
+
+.teszt1:hover {-webkit-box-shadow: 0px 0px 15px 7px #FFE8C8; 
+box-shadow: 0px 0px 15px 7px #FFE8C8;
+				border-radius: 12px;
+				opacity: .9;
+				transition: 0s;
+
+			}
+
+
+.kartya{
+		display: block;
+			background-color: #d7b39a;
+-webkit-box-shadow: 0px 0px 15px 5px #FFE8C8; 
+box-shadow: 0px 0px 15px 5px #FFE8C8;
+		border: 2px solid black;
+		border-radius: 10px;
+		
+		margin:8px, 8px, 8px, 0px;
+		text-align: center;
+		
+
+
+
+
+		
+	}
+
+
+
+	.kartya img{
+		max-height: 13rem;
+		max-width: 250px;
+
+		display: block;
+		margin: .4rem auto;
+	}
+	.kartya:hover img{
+		cursor: pointer; 
+		display: block;
+		max-width: 60vw;
+		}
+
+	.kartya:hover img{
+		cursor: pointer;
+	}
+	.kartya span{
+		font-weight: bolder;
+		color: #264653;
+	}
+
+	.flex_egyenletesen{
+	justify-content: space-around;
+}
+.flex1{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+
+
+.kartya_pozicionalt{
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+	margin:.5rem 0;
+}
+.kartya_pozicionalt img{
+	margin: 0;
+	max-height: 15rem;
+}
+.kartya_pozicionalt span{
+	position: absolute;
+	top: -100%;
+	left:0;
+	width: 100%;
+	padding: .2rem .2rem .2rem .5rem;
+	text-align: left;
+	background-color: rgba(255,255,255,.7);
+	transition: .3s;
+}
+.kartya_pozicionalt:hover span{ 
+	top:0;
+}
+
+.fehér {color: #FFFFFF;
+		text-align: center;
+		
+		padding: 12px;
+		}
+
+.alja {padding-bottom: 40%;}
+
+.fehér:hover {color: #FFFFFF;
+background: #333333;
+text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+transition: .8s;}
+
+
+
+
+.float_kep{
+	height: 5rem;
+	float:left;
+	margin-right: 30px;
+	margin-top:4px;
+	border-radius: 2rem;
+	
+	-webkit-box-shadow: 0px 0px 15px 5px #FFFFFF; 
+box-shadow: 0px 0px 15px 5px #FFFFFF;
+}
+
+.fehér.alja{padding-bottom: 20px;}
+
+/*---------------változó képek---------------*/
+
+.kartyav{ height: 48vh;
+	width: 27vh;
+display: block;
+padding:5px;
+			
+-webkit-box-shadow: 0px 0px 15px 5px #FFE8C8; 
+box-shadow: 0px 0px 15px 5px #FFE8C8;
+		border: 2px solid black;
+		border-radius: 10px;s
+		padding: .4rem;
+		margin:8px, 8px, 8px, 0px;
+		background-image: url("esr.jpg");
+		background-size: cover; }
+
+.kartyav:hover{ background-image: url("esc.jpg");				
+transition: 2s; }
+
+.kartyavegy{ height: 48vh;
+	width: 27vh;
+display: block;
+padding:5px;
+			
+-webkit-box-shadow: 0px 0px 15px 5px #FFE8C8; 
+box-shadow: 0px 0px 15px 5px #FFE8C8;
+		border: 2px solid black;
+		border-radius: 10px;s
+		padding: .4rem;
+		margin:8px, 8px, 8px, 0px;
+		background-image: url("tgr.jpg");
+		background-size: cover; transition: 2s; }
+
+.kartyavegy:hover{ background-image: url("tgs.jpg");				
+transition: 2s; }
+
+.kartyavay{ height: 40vh;
+	width: 40vh;
+display: block;
+padding:5px;
+			
+-webkit-box-shadow: 0px 0px 15px 5px #FFE8C8; 
+box-shadow: 0px 0px 15px 5px #FFE8C8;
+		border: 2px solid black;
+		border-radius: 10px;s
+		padding: .4rem;
+		margin:8px, 8px, 8px, 0px;
+		background-image: url("jaa.jpg");
+		background-size: cover; transition: 2s; }
+
+.kartyavay:hover{ background-image: url("jad.jpg");				
+transition: 2s; }
+
+.kreat{ height: 40vh;
+	width: 55vh;
+display: block;s
+padding:5px;
+			
+-webkit-box-shadow: 0px 0px 15px 5px #FFE8C8; 
+box-shadow: 0px 0px 15px 5px #FFE8C8;
+		border: 2px solid black;
+		border-radius: 10px;s
+		padding: .4rem;
+		margin:8px, 8px, 8px, 0px;
+		background-image: url("nyvtn1.jpg");
+		background-size: cover; transition: 2s; }
+
+.kreat:hover{ background-image: url("nyvtn2.jpg");				
+transition: 2s; }
+
+
+
+
+
+
+
+
+
+
+.kartya.alap:hover{transform: scale(1.5);
+				z-index: 30;}
+
+
+.kartya.egyes{background-image: url("esr.jpg");
+		background-size: cover;
+		}
+
+.kartya.egyes:hover{background-image: url("esc.jpg");
+		background-size: cover;
+		transition: 3s;}
+
+.kartya.kettes{background-image: url("tgr.jpg");
+		background-size: cover;
+		}
+
+.kartya.kettes:hover{background-image: url("tgs.jpg");
+		background-size: cover;
+		transition: 3s;}
+
+.kartya.hármas{background-image: url("jaa.jpg");
+		background-size: cover;
+		}
+
+.kartya.hármas:hover{background-image: url("jad.jpg");
+		background-size: cover;
+		transition: 3s;}
+
+		.hármas img{opacity:.0;}
+		.kettes img{opacity:.0;}
+		.egyes img{opacity:.0;}
+		.négyes img{opacity:.0;}
+
+.kartya.négyes{background-image: url("nyvtn1.jpg");
+		background-size: cover;
+		}
+
+.kartya.négyes:hover{background-image: url("nyvtn2.jpg");
+		background-size: cover;
+		transition: 3s;}
